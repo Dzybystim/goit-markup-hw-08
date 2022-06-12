@@ -1,0 +1,47 @@
+/*Animation*/
+@keyframes animatemodal {
+    0% {
+        transform: translate(-50%, -50%) scale(1) ;
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.1) ;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1) ;
+    }
+}
+
+@keyframes animatelogo {
+    0% {
+        transform: scale(1) ;
+    }
+
+    50% {
+        transform: scale(1.2) ;
+    }
+
+    100% {
+        transform: scale(1) ;
+    }
+}
+
+@keyframes animatebutton {
+    0% {
+        transform: rotate(0) ;
+    }
+
+    25% {
+        transform: rotate(10deg) ;
+    }
+    50% {
+        transform: rotate(0) ;
+    }
+    75% {
+        transform: rotate(-10deg)
+    }
+    100% {
+        transform: rotate(0) ;
+    }
+}

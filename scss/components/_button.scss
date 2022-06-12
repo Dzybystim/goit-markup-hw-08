@@ -1,0 +1,188 @@
+.button {
+    font-family: inherit;
+    color: var(--three-color-text);
+    background-color: var(--accent-color-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 32px;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    cursor: pointer;
+    background-color:  var(--six-bg);
+
+    animation-name: animatebutton;
+    animation-duration: 2000ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 250ms;
+    animation-iteration-count: infinite;
+   
+}
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--three-color-text);
+    background-color: var(--accent-color-text);
+
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+        background-color: var(--six-bg);
+    }
+    
+&__text {
+        margin-right: 10px;
+    }
+
+}
+
+
+.filter-button {
+    background-color: var(--second-bg);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    font-family: inherit;
+
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    background-color: var(--accent-color-text);
+    color: var(--three-color-text);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+}
+  }
+
+.submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    color: var(--three-color-text);
+    background-color: var(--accent-color-text);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+ background-color: var(--six-bg);
+}
+}
+.modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+
+&:focus .modal-btn__close-icon,
+&:hover .modal-btn__close-icon {
+    fill: var(--accent-color-text);
+}
+
+&__close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.menu-button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+
+// Скрываю лого
+    &.is-open+.logo {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button .icon-close {
+    display: none;
+}
+
+.menu-button.is-open .icon-close {
+    display: block;
+   
+}
+.menu-button.is-open .icon-menu {
+    display: none;
+}

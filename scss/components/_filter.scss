@@ -1,0 +1,12 @@
+.filter-nav {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+
+    &__link {
+        margin-right: 8px;
+      }
+    &__link:last-child {
+          margin-right: 0;
+      }
+}

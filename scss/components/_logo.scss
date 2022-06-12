@@ -1,0 +1,32 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    margin-right: 276px;
+    
+
+    animation-name: animatelogo;
+    animation-duration: 3000ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-delay: 1000ms;
+
+
+
+ @include mq(desktop) {
+font-size: 26px;
+line-height: 1.19;
+
+ }
+    
+
+&__part {
+        color: var(--accent-color-text);
+    }
+    
+&__part-two {
+        color: var(--three-color-text);
+    }
+}

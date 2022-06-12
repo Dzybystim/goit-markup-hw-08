@@ -1,0 +1,51 @@
+.section-foto {
+    padding-bottom: 94px;
+
+    &__title {
+
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        color: var(--main-color-text);
+        
+        margin-bottom: 50px;
+        }
+        
+        &__list {
+            margin-right: 30px;
+            position: relative;
+            text-align: center;
+            
+        }
+        &__list:last-child {
+            margin-right: 0;
+        }
+        
+        &__image {
+            display: block;
+        }
+        &__text {
+            position: absolute;
+            font-weight: 700;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            bottom: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            
+            color: var(--three-color-text);
+        
+            background-color: var(--four-bg);
+            
+        }
+}

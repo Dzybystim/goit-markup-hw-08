@@ -1,0 +1,28 @@
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__list:not(:last-child) {
+        margin-right: 10px;
+        }
+    &__link {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: var(--first-color-icon);
+        border-radius: 50%;
+         
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            
+         }
+    &__link:hover,
+    &__link:focus {
+        background-color: var(--accent-color-text);
+        fill: var(--three-color-text);
+         }
+}
+
