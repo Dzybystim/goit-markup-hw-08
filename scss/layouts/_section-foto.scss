@@ -1,4 +1,7 @@
 .section-foto {
+    display: none;
+    @include mq(desktop){
+
     padding-bottom: 94px;
 
     &__title {
@@ -48,4 +51,5 @@
             background-color: var(--four-bg);
             
         }
+    }
 }

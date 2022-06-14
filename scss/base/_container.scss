@@ -8,6 +8,7 @@
         align-items: center;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
 //For mobile screen 480px
 @include mq(mobile) {
