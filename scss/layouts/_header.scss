@@ -13,13 +13,14 @@ header {
     width:100%;
     left: 0;
 
-    height: 796px;
+    height: 756px;
     background-color: var(--three-color-text);
     
     box-shadow: 0px 4px  rgba(0, 0, 0, 0.04), 0px 2px  rgba(0, 0, 0, 0.08), 0px 1px rgba(0, 0, 0, 0.16);
 
     &.is-open {
-        display: block;
+        display: flex;
+        flex-direction: column;
 }
 }
 
@@ -30,12 +31,27 @@ header {
     //display: flex;
     padding-left: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+   // margin-bottom: 302px;
+
 
     &__item {
+        margin-bottom: 32px;
+
+        @include mq(tablet){
         margin-right: 50px;
+        margin-bottom: 0;
+    }
+        
+        @include mq(desktop){
+        margin-right: 50px;
+        margin-bottom: 0;
+        }
+
     }
     &__item:last-child {
+        margin-bottom: 0;
         margin-right: 0;
     }
     &__link
@@ -49,8 +65,10 @@ display: block;
 color: var(--main-color-text);
 
 margin-left: 40px;
+
         
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     }
     &__link:hover,
     &__link:focus
@@ -81,21 +99,81 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 //}
 
 .contact-header {
-    margin-left: auto;
+
+
     display: flex;
+    flex-direction: column-reverse;
+    margin-top: auto;
+
+    @include mq(tablet){
+        margin-left: auto;
+        display: block;
+    }
+    @include mq(desktop) {
+        margin-left: auto;
+        display: flex;
+    }
+    
+
+
+
+    
 
     &__link {
         font-weight: 500;
+        font-size: 24px;
+        line-height: 1.17;
         color: var(--second-color-text);
-        margin-right: 50px;
+        margin-right: 0;
+        margin-left: 40px;
+        margin-bottom: 32px;
+
+        &:first-child {
+            margin-bottom:0;  
+        }
+
+
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+        @include mq(tablet) {
+        margin-right: 0; 
+        margin-bottom: 0;
         display: flex;
         align-items:center;
         justify-content: center;
+        }
+
+        @include mq(desktop) {
+        margin-right: 50px;
         padding-top: 32px;
         padding-bottom: 32px;
-    
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        margin-bottom:0;
+        }
+
     }
+
+    &__link--accent-color {
+        font-size: 34px;
+        line-height: 1.17;
+        color: var(--accent-color-text);
+
+        @include mq(tablet){
+        font-size:  12px;
+        line-height: 1.17;
+        color: var(--second-color-text);
+        }
+        @include mq(desktop) {
+        font-size:  14px;   
+        line-height: 1.14;
+        color: var(--second-color-text);
+        }
+
+    }
+    
     &__link:last-child {
         margin-right: 0;
     }
@@ -106,10 +184,67 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     &__icon {
+        display: none;
+
+        @include mq(tablet){
         margin-right: 10px;
         fill: currentColor;
+        display: block;
+    }
+
+        @include mq(desktop){
+            margin-right: 10px;
+            fill: currentColor;  
+            display: block; 
+        }
     }
 }
 
 .head-portfolio {
     border-bottom: 1px solid var(--first-bord);}
+
+.mobile-icon {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 64px;
+    padding: 0;
+    margin-bottom: 48px;
+    margin-left: 40px;
+
+    @include mq(tablet) {
+        display: none;
+    }
+
+    @include mq(desktop) {
+        display: none; 
+    }
+}
+
+.mobile-icon__list {
+    display: block;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right-width: 1px;
+    border-right-color: rgba(33, 33, 33, 0.2);
+    border-right-style: solid;
+}
+
+.mobile-icon__list:last-child {
+    margin-right: 0; 
+    border-right-width: 0;
+    border-right-color: 0;
+    border-right-style: 0;
+    padding-right: 0;
+}
+
+.mobile-icon__link {
+
+font-weight: 500;
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--accent-color-text);
+text-decoration: none;
+}
