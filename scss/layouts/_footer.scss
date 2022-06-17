@@ -1,8 +1,18 @@
 .footer {
     background-color: var(--first-bg);
-    padding-top:60px ;
+    padding-top: 60px ;
     padding-bottom: 60px;
 }
+
+@include mq(tablet) {
+    .footer--centering{
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 @include mq(desktop) {
     .footer--centering {
@@ -22,10 +32,13 @@
 
     @include mq(tablet) {
     margin-right: 165px;
+    margin-bottom: 60px;
     }
 
     @include mq(desktop){
     margin-right: 70px; 
+    margin-bottom: 0;
+    text-align: start;
     }
 }
 
@@ -84,6 +97,7 @@ color: var(--accent-color-text);
 
     @include mq(desktop) {
     margin-right: 93px; 
+    text-align: start;
     }
 }
 
@@ -159,6 +173,16 @@ color: var(--accent-color-text);
     letter-spacing: 0.03em;
     color: var(--three-color-text);
     margin-bottom: 20px; 
+
+    @include mq(tablet){
+        text-align: center;
+    }
+  
+    @include mq(desktop) {
+        text-align: start;
+    }
+
+
 }
 
 .subscribe-block__form {
@@ -197,13 +221,15 @@ color: var(--accent-color-text);
 
     @include mq(tablet) {
         width: 450px;
-        margin-top: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
     }
 
     @include mq(desktop) {
         width: 358px;
         margin-right: 12px;  
         margin-top: 0;
+        margin-bottom: 0;
     }
 }
 .subscribe-block__input:hover,

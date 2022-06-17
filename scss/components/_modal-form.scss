@@ -4,9 +4,17 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
+
+    @include mq(tablet) {
+    line-height: 1.5;
+    }
+
+    @include mq(desktop) {
+    line-height: 1.15; 
+    }
 
 }
 
@@ -155,10 +163,21 @@ opacity: 1;
 
 .text-terms {
 font-family: 'Roboto';
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.17;
 letter-spacing: 0.03em;
 color: var(--second-color-text);
+
+@include mq(tablet) {
+    font-size: 12px;
+    line-height: 1.17;
+}
+
+@include mq(desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 }
 
 .text-terms__link {

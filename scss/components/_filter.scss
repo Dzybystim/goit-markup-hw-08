@@ -1,10 +1,44 @@
 .filter-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @include mq(tablet) {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
     display: flex;
     justify-content:center;
     margin-bottom: 50px;
+  }
+
 
     &__link {
+      margin-right: 8px;
+      margin-bottom: 15px;
+
+      &:nth-child(4) {
+        margin-bottom: 0;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+
+
+      @include mq(tablet){
         margin-right: 8px;
+        margin-bottom: 0;
+      }
+
+      @include mq(desktop){
+        margin-right: 8px;
+        margin-bottom: 0;
+      }
+        
       }
     &__link:last-child {
           margin-right: 0;

@@ -18,10 +18,12 @@
 
     @include mq(tablet) {
     display: flex;
+    justify-content: center;
+    align-items: baseline;
     flex-wrap: wrap;
     margin-bottom: -30px;
     margin-right: -30px;
-
+    width: 100%;
     padding-inline-start: 0;
     }
 
