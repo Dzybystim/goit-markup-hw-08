@@ -1,13 +1,21 @@
 .container {
+width: 290px;
+padding-left: 15px;
+padding-right: 15px;
 
 //For mobile screen 480px
 @include mq(mobile) {
+
     width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
     
 }
 //Tablet screen 768px
 @include mq(tablet) {
     width: 738px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 //Desktop screen 1200 px
 @include mq(desktop) {
