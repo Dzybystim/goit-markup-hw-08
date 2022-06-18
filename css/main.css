@@ -1275,12 +1275,11 @@ header {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background/hero_mob_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 480px;
+  width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-size: 480px 400px;
-  background-size: cover;
   background-color: var(--first-bg);
 }
 
@@ -1297,10 +1296,9 @@ header {
     padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background/hero_tab_1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background/hero_tab_1x.jpg);
-    max-width: 768px;
+    width: 768px;
     height: 400px;
     background-size: 768px 400px;
-    background-size: cover;
   }
 }
 
@@ -1317,10 +1315,9 @@ header {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/background/hero_des_1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/background/hero_des_1x.jpg);
-    max-width: 1600px;
+    width: 1600px;
     height: 600px;
     background-size: 1600px 600px;
-    background-size: cover;
   }
 }
 
