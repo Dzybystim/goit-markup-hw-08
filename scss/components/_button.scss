@@ -141,8 +141,8 @@
 }
 .modal-btn {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 4px;
+    right: 4px;
     cursor: pointer;
 
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -156,6 +156,11 @@
     align-items: center;
 
     padding: 0;
+
+    @include mq(mobile){
+        top: 8px;
+        right: 8px;
+    }
 
 
 &:focus .modal-btn__close-icon,

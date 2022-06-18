@@ -55,23 +55,10 @@
         
     &__icon {
             
-            padding-top: 16px;
-            padding-bottom: 16px;
+
             flex-basis: calc(100% / 2 - 15px);
             margin-right: 30px;
             margin-bottom: 30px;
-
-            
-            border-radius: 4px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            fill: var(--first-color-icon);
-            color: var(--first-color-icon);
-            border: 1px solid var(--first-color-icon);
-        
-            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
             &:nth-child(2n) {
                 margin-right: 0;
@@ -107,19 +94,31 @@
 
 
         }
-    &__icon:hover,
-    &__icon:focus {
-            border: 1px solid var(--accent-color-text);
-            fill: var(--accent-color-text);
-        }
+
 
     &__link {
+
+
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         fill: var(--first-color-icon);
+        color: var(--first-color-icon);
+        border: 1px solid var(--first-color-icon);
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        padding-top: 16px;
+        padding-bottom: 16px;
         }
     &__link:hover,
     &__link:focus {
-        
+        border: 1px solid var(--accent-color-text);
         fill: var(--accent-color-text);
         }
+
+
 }
 
